@@ -29,16 +29,16 @@ services:
       - ./mysql/my.cnf:/etc/mysql/my.cnf
     networks:
       - laravel-network
-  phpmyadmin:
-    image: phpmyadmin/phpmyadmin
-    ports:
-      - "8581:80"
-    environment:
-      MYSQL_USERNAME: laravel
-      MYSQL_ROOT_PASSWORD: laravel
-      PMA_HOST: db
-    networks:
-      - laravel-network
+  #phpmyadmin:
+  #  image: phpmyadmin/phpmyadmin
+  #  ports:
+  #    - "8581:80"
+  #  environment:
+  #    MYSQL_USERNAME: laravel
+  #    MYSQL_ROOT_PASSWORD: laravel
+  #    PMA_HOST: db
+  #  networks:
+  #    - laravel-network
 
 #Docker Networks
 networks:
